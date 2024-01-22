@@ -34,6 +34,7 @@
             colors: {
               clifford: "#da373d",
               'color-theme': "#FF4240",
+              'color-black': "#131318",
             },
           },
         },
@@ -47,9 +48,50 @@
       }
     </style>
   </head>
-  <body class="font-manrope">
-    <header>
 
+
+  <body class="font-manrope">
+
+    <header class="container mx-auto lg:px-24 px-8">
+      <!-- Navbar starts -->
+      <nav>
+        <div class="navbar mt-5">
+
+          <div class="navbar-start">
+            <div class="dropdown">
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+              </div>
+              <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                <li><a class="text-color-theme">Home</a></li>
+                <li><a>About</a></li>
+                <li><a>Pages</a></li>
+                <li><a>Blog</a></li>
+                <li><a>Contact</a></li>
+              </ul>
+            </div>
+            <a class="lg:text-4xl text-3xl text-color-black font-extrabold">Hockey<span class="text-color-theme">’</span>s</a>
+          </div>
+
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1">
+              <li><a class="text-color-theme">Home</a></li>
+              <li><a class="text-[#424247]">About</a></li>
+              <li><a class="text-[#424247]">Pages</a></li>
+              <li><a class="text-[#424247]">Blog</a></li>
+              <li><a class="text-[#424247]">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="navbar-end">
+            <div class="flex space-x-5 items-center">
+              <img class="w-4 h-8 hidden lg:flex" src="./Images/search.png" alt="search-icon">
+              <a class="btn bg-color-theme text-white border-none px-4">Get Ticket</a>
+            </div>
+            
+          </div>
+        </div>
+      </nav>
     </header>
 
     <main>
